@@ -4,12 +4,12 @@ Whetstone is a small Django project that asks OpenAI for Python programming exer
 
 ## Start it
 
-1. Copy `.env.example` to `.env`, add an `OPENAI_API_KEY`, and export the values (for example, `set -a; source .env; set +a`).
+1. Copy `.env.example` to `.env`, add an `OPENAI_API_KEY`, and export the values (for example, `set -a; source .env; set +a`). This project maps PostgreSQL to host port `5433` to avoid a common local `5432` conflict.
 2. Install Python dependencies: `python -m pip install -r requirements.txt`.
 3. Start infrastructure: `docker compose up -d`.
 4. Build the judge image: `docker compose --profile sandbox build sandbox`.
 5. Apply schema migrations: `python manage.py migrate`.
-6. Start a worker in a second terminal: `celery -A whetstone worker --loglevel=info`.
+6. Start a worker in a second terminal after exporting `.env`: `celery -A whetstone worker --loglevel=info`. The worker needs permission to run Docker (usually log out and back in after adding your user to the `docker` group).
 7. Queue an exercise: `python manage.py generate --topic sorting --difficulty beginner --count 1`.
 
 The command needs a real API key. Its model is configurable with `OPENAI_MODEL` and defaults to `gpt-5-mini`.
