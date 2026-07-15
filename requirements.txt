@@ -1,0 +1,5 @@
+Django>=5.2,<6.0
+psycopg[binary]>=3.2
+openai>=1.0
+pytest>=8.0
+
