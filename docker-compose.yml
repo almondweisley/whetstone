@@ -22,6 +22,16 @@ services:
     volumes:
       - redis_data:/data
 
+  # Build this once before using the Docker judge. The Celery worker itself is
+  # documented as a local command so it can use the host Docker socket safely.
+  sandbox:
+    build:
+      context: .
+      dockerfile: sandbox/Dockerfile
+    image: whetstone-sandbox:latest
+    profiles: ["sandbox"]
+    command: ["python", "--version"]
+
 volumes:
   postgres_data:
   redis_data:

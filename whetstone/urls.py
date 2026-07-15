@@ -2,5 +2,11 @@
 from django.contrib import admin
 from django.urls import path
 
-urlpatterns = [path("admin/", admin.site.urls)]
+from exercises import views
 
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("api/runs", views.runs),
+    path("api/runs/<int:run_id>", views.run_detail),
+    path("api/exercises", views.exercises),
+]

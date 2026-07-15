@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
                 ("topic", models.CharField(max_length=255)),
                 ("difficulty", models.CharField(max_length=64)),
                 ("requested_count", models.PositiveIntegerField()),
-                ("status", models.CharField(choices=[("running", "Running"), ("completed", "Completed"), ("failed", "Failed")], default="running", max_length=16)),
+                ("status", models.CharField(choices=[("queued", "Queued"), ("running", "Running"), ("completed", "Completed"), ("failed", "Failed")], default="queued", max_length=16)),
                 ("created_at", models.DateTimeField(auto_now_add=True)),
             ],
         ),
@@ -42,4 +42,3 @@ class Migration(migrations.Migration):
             ],
         ),
     ]
-

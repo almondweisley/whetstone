@@ -5,6 +5,7 @@ class GenerationRun(models.Model):
     """One invocation of the generate command."""
 
     class Status(models.TextChoices):
+        QUEUED = "queued", "Queued"
         RUNNING = "running", "Running"
         COMPLETED = "completed", "Completed"
         FAILED = "failed", "Failed"
@@ -12,7 +13,7 @@ class GenerationRun(models.Model):
     topic = models.CharField(max_length=255)
     difficulty = models.CharField(max_length=64)
     requested_count = models.PositiveIntegerField()
-    status = models.CharField(max_length=16, choices=Status.choices, default=Status.RUNNING)
+    status = models.CharField(max_length=16, choices=Status.choices, default=Status.QUEUED)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -49,4 +50,3 @@ class Exercise(models.Model):
 
     def __str__(self):
         return f"Exercise #{self.pk} from candidate #{self.winning_candidate_id}"
-
