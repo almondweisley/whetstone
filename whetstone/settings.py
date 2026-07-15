@@ -51,7 +51,7 @@ DATABASES = {
         "USER": os.environ.get("POSTGRES_USER", "whetstone"),
         "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "whetstone"),
         "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
-        "PORT": os.environ.get("POSTGRES_PORT", "5432"),
+        "PORT": os.environ.get("POSTGRES_PORT", "5433"),
     }
 }
 
@@ -62,4 +62,3 @@ USE_I18N = True
 USE_TZ = True
 STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
