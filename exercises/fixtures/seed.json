@@ -1,0 +1,1479 @@
+[
+{
+  "model": "exercises.generationrun",
+  "pk": 22,
+  "fields": {
+    "topic": "list comprehensions",
+    "difficulty": "beginner",
+    "requested_count": 4,
+    "status": "completed",
+    "created_at": "2026-07-16T19:00:55.684Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 23,
+  "fields": {
+    "topic": "dictionary iteration",
+    "difficulty": "beginner",
+    "requested_count": 4,
+    "status": "completed",
+    "created_at": "2026-07-16T19:02:41.385Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 24,
+  "fields": {
+    "topic": "string manipulation",
+    "difficulty": "beginner",
+    "requested_count": 4,
+    "status": "completed",
+    "created_at": "2026-07-16T19:02:44.191Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 25,
+  "fields": {
+    "topic": "recursion",
+    "difficulty": "intermediate",
+    "requested_count": 4,
+    "status": "completed",
+    "created_at": "2026-07-16T19:02:46.970Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 26,
+  "fields": {
+    "topic": "sorting with custom keys",
+    "difficulty": "intermediate",
+    "requested_count": 4,
+    "status": "completed",
+    "created_at": "2026-07-16T19:02:49.753Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 27,
+  "fields": {
+    "topic": "set operations",
+    "difficulty": "beginner",
+    "requested_count": 4,
+    "status": "completed",
+    "created_at": "2026-07-16T19:02:52.519Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 28,
+  "fields": {
+    "topic": "generators and yield",
+    "difficulty": "intermediate",
+    "requested_count": 3,
+    "status": "completed",
+    "created_at": "2026-07-16T19:02:55.307Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 29,
+  "fields": {
+    "topic": "binary search",
+    "difficulty": "intermediate",
+    "requested_count": 3,
+    "status": "completed",
+    "created_at": "2026-07-16T19:02:57.675Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 30,
+  "fields": {
+    "topic": "dynamic programming",
+    "difficulty": "hard",
+    "requested_count": 5,
+    "status": "completed",
+    "created_at": "2026-07-16T19:11:57.524Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 31,
+  "fields": {
+    "topic": "graph traversal",
+    "difficulty": "hard",
+    "requested_count": 5,
+    "status": "completed",
+    "created_at": "2026-07-16T19:12:00.797Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 32,
+  "fields": {
+    "topic": "interval scheduling",
+    "difficulty": "hard",
+    "requested_count": 4,
+    "status": "completed",
+    "created_at": "2026-07-16T19:12:05.028Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 33,
+  "fields": {
+    "topic": "matrix manipulation",
+    "difficulty": "hard",
+    "requested_count": 4,
+    "status": "completed",
+    "created_at": "2026-07-16T19:12:07.795Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 34,
+  "fields": {
+    "topic": "string parsing",
+    "difficulty": "hard",
+    "requested_count": 4,
+    "status": "completed",
+    "created_at": "2026-07-16T19:12:10.563Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 35,
+  "fields": {
+    "topic": "combinatorics",
+    "difficulty": "hard",
+    "requested_count": 4,
+    "status": "completed",
+    "created_at": "2026-07-16T19:12:13.340Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 36,
+  "fields": {
+    "topic": "bit manipulation",
+    "difficulty": "hard",
+    "requested_count": 4,
+    "status": "completed",
+    "created_at": "2026-07-16T19:12:16.100Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 199,
+  "fields": {
+    "generation_run": 22,
+    "problem_statement": "Write solve(numbers) to return a new list containing the squares of the even numbers in numbers, in their original order.",
+    "reference_solution": "def solve(numbers):\n    return [number * number for number in numbers if number % 2 == 0]\n",
+    "test_source": "from solution import solve\n\ndef test_squares_even_numbers():\n    assert solve([1, 2, 3, 4, 5]) == [4, 16]\n\ndef test_empty_list():\n    assert solve([]) == []\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:00:55.688Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 200,
+  "fields": {
+    "generation_run": 22,
+    "problem_statement": "Write solve(words) to return every word longer than three characters, converted to uppercase. Preserve the original order.",
+    "reference_solution": "def solve(words):\n    return [word.upper() for word in words if len(word) > 3]\n",
+    "test_source": "from solution import solve\n\ndef test_filters_and_uppercases():\n    assert solve(['cat', 'table', 'dog', 'river']) == ['TABLE', 'RIVER']\n\ndef test_no_matches():\n    assert solve(['a', 'to', 'yes']) == []\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:00:56.148Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 201,
+  "fields": {
+    "generation_run": 22,
+    "problem_statement": "Write solve(numbers) to return the absolute value of each negative number in numbers. Ignore zero and positive numbers.",
+    "reference_solution": "def solve(numbers):\n    return [-number for number in numbers if number < 0]\n",
+    "test_source": "from solution import solve\n\ndef test_negative_values():\n    assert solve([-5, 0, 2, -1]) == [5, 1]\n\ndef test_all_nonnegative():\n    assert solve([0, 3, 8]) == []\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:00:56.586Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 202,
+  "fields": {
+    "generation_run": 22,
+    "problem_statement": "Write solve(text) to return a list of the vowels in text, in lowercase and in the order they appear. Treat A, E, I, O, and U as vowels.",
+    "reference_solution": "def solve(text):\n    return [character.lower() for character in text if character.lower() in 'aeiou']\n",
+    "test_source": "from solution import solve\n\ndef test_mixed_case_vowels():\n    assert solve('ApplE Pie') == ['a', 'e', 'i', 'e']\n\ndef test_no_vowels():\n    assert solve('rhythms') == []\n",
+    "attempt_number": 4,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:00:57.037Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 203,
+  "fields": {
+    "generation_run": 23,
+    "problem_statement": "Write solve(scores) to return the sum of all numeric values in the scores dictionary.",
+    "reference_solution": "def solve(scores):\n    return sum(scores.values())\n",
+    "test_source": "from solution import solve\n\ndef test_sums_values():\n    assert solve({'Ada': 10, 'Lin': 15, 'Sam': 5}) == 30\n\ndef test_empty_dictionary():\n    assert solve({}) == 0\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:41.389Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 204,
+  "fields": {
+    "generation_run": 23,
+    "problem_statement": "Write solve(inventory) to return a list of item names whose quantity is zero. Keep the dictionary's iteration order.",
+    "reference_solution": "def solve(inventory):\n    return [name for name, quantity in inventory.items() if quantity == 0]\n",
+    "test_source": "from solution import solve\n\ndef test_out_of_stock_items():\n    assert solve({'pens': 3, 'paper': 0, 'clips': 0}) == ['paper', 'clips']\n\ndef test_all_in_stock():\n    assert solve({'cups': 2}) == []\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:41.856Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 205,
+  "fields": {
+    "generation_run": 23,
+    "problem_statement": "Write solve(prices) to return a new dictionary where each price is discounted by 10 percent. Keep the same keys.",
+    "reference_solution": "def solve(prices):\n    return {name: price * 0.9 for name, price in prices.items()}\n",
+    "test_source": "from solution import solve\n\ndef test_discounted_prices():\n    assert solve({'book': 20, 'pen': 10}) == {'book': 18.0, 'pen': 9.0}\n\ndef test_empty_prices():\n    assert solve({}) == {}\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:42.285Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 206,
+  "fields": {
+    "generation_run": 23,
+    "problem_statement": "Write solve(word_counts) to return the key with the largest value. If several keys share the largest value, return the first one in dictionary iteration order.",
+    "reference_solution": "def solve(word_counts):\n    return max(word_counts, key=word_counts.get)\n",
+    "test_source": "from solution import solve\n\ndef test_largest_count():\n    assert solve({'red': 2, 'blue': 5, 'green': 3}) == 'blue'\n\ndef test_tie_uses_first_key():\n    assert solve({'first': 4, 'second': 4}) == 'first'\n",
+    "attempt_number": 4,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:42.735Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 207,
+  "fields": {
+    "generation_run": 24,
+    "problem_statement": "Write solve(text) to return text with all spaces removed.",
+    "reference_solution": "def solve(text):\n    return text.replace(' ', '')\n",
+    "test_source": "from solution import solve\n\ndef test_removes_spaces():\n    assert solve('hello wide world') == 'hellowideworld'\n\ndef test_no_spaces():\n    assert solve('python') == 'python'\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:44.195Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 208,
+  "fields": {
+    "generation_run": 24,
+    "problem_statement": "Write solve(text) to return True when text is a palindrome after ignoring case, and False otherwise.",
+    "reference_solution": "def solve(text):\n    normalized = text.lower()\n    return normalized == normalized[::-1]\n",
+    "test_source": "from solution import solve\n\ndef test_palindrome():\n    assert solve('Level') is True\n\ndef test_not_palindrome():\n    assert solve('Python') is False\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:44.632Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 209,
+  "fields": {
+    "generation_run": 24,
+    "problem_statement": "Write solve(sentence) to return the number of words in sentence. Words are separated by one or more whitespace characters.",
+    "reference_solution": "def solve(sentence):\n    return len(sentence.split())\n",
+    "test_source": "from solution import solve\n\ndef test_multiple_spaces():\n    assert solve('one   two three') == 3\n\ndef test_blank_text():\n    assert solve('   ') == 0\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:45.082Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 210,
+  "fields": {
+    "generation_run": 24,
+    "problem_statement": "Write solve(text) to return a string made from the first character of every word in text. Words are separated by whitespace.",
+    "reference_solution": "def solve(text):\n    return ''.join(word[0] for word in text.split())\n",
+    "test_source": "from solution import solve\n\ndef test_initials():\n    assert solve('central processing unit') == 'cpu'\n\ndef test_one_word():\n    assert solve('Hello') == 'H'\n",
+    "attempt_number": 4,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:45.518Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 211,
+  "fields": {
+    "generation_run": 25,
+    "problem_statement": "Write solve(n) recursively to return the sum of all integers from 1 through n. For n equal to 0, return 0.",
+    "reference_solution": "def solve(n):\n    if n == 0:\n        return 0\n    return n + solve(n - 1)\n",
+    "test_source": "from solution import solve\n\ndef test_positive_sum():\n    assert solve(5) == 15\n\ndef test_zero():\n    assert solve(0) == 0\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:46.973Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 212,
+  "fields": {
+    "generation_run": 25,
+    "problem_statement": "Write solve(text) recursively to return text reversed.",
+    "reference_solution": "def solve(text):\n    if len(text) <= 1:\n        return text\n    return solve(text[1:]) + text[0]\n",
+    "test_source": "from solution import solve\n\ndef test_reverses_text():\n    assert solve('recursion') == 'noisrucer'\n\ndef test_empty_text():\n    assert solve('') == ''\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:47.410Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 213,
+  "fields": {
+    "generation_run": 25,
+    "problem_statement": "Write solve(numbers) recursively to return the largest number in a non-empty list of integers.",
+    "reference_solution": "def solve(numbers):\n    if len(numbers) == 1:\n        return numbers[0]\n    return max(numbers[0], solve(numbers[1:]))\n",
+    "test_source": "from solution import solve\n\ndef test_largest_number():\n    assert solve([3, 9, 2, 8]) == 9\n\ndef test_single_number():\n    assert solve([-4]) == -4\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:47.842Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 214,
+  "fields": {
+    "generation_run": 25,
+    "problem_statement": "Write solve(n) recursively to return the nth Fibonacci number, where solve(0) is 0 and solve(1) is 1.",
+    "reference_solution": "def solve(n):\n    if n < 2:\n        return n\n    return solve(n - 1) + solve(n - 2)\n",
+    "test_source": "from solution import solve\n\ndef test_fibonacci_value():\n    assert solve(7) == 13\n\ndef test_base_values():\n    assert solve(0) == 0\n    assert solve(1) == 1\n",
+    "attempt_number": 4,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:48.274Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 215,
+  "fields": {
+    "generation_run": 26,
+    "problem_statement": "Write solve(words) to return a new list of words sorted by length from shortest to longest. Keep original order for equal-length words.",
+    "reference_solution": "def solve(words):\n    return sorted(words, key=len)\n",
+    "test_source": "from solution import solve\n\ndef test_sorts_by_length():\n    assert solve(['pear', 'a', 'plum', 'kiwi']) == ['a', 'pear', 'plum', 'kiwi']\n\ndef test_empty_list():\n    assert solve([]) == []\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:49.757Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 216,
+  "fields": {
+    "generation_run": 26,
+    "problem_statement": "Write solve(records) to return a new list of (name, age) tuples sorted by age from oldest to youngest.",
+    "reference_solution": "def solve(records):\n    return sorted(records, key=lambda record: record[1], reverse=True)\n",
+    "test_source": "from solution import solve\n\ndef test_sorts_oldest_first():\n    assert solve([('Ada', 31), ('Bo', 42), ('Cy', 25)]) == [('Bo', 42), ('Ada', 31), ('Cy', 25)]\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:50.194Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 217,
+  "fields": {
+    "generation_run": 26,
+    "problem_statement": "Write solve(numbers) to return a new list sorted by absolute value from smallest to largest.",
+    "reference_solution": "def solve(numbers):\n    return sorted(numbers, key=abs)\n",
+    "test_source": "from solution import solve\n\ndef test_sorts_by_absolute_value():\n    assert solve([-10, 3, -2, 1]) == [1, -2, 3, -10]\n\ndef test_zero():\n    assert solve([0]) == [0]\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:50.627Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 218,
+  "fields": {
+    "generation_run": 26,
+    "problem_statement": "Write solve(names) to return a new list of names sorted alphabetically without considering uppercase or lowercase letters.",
+    "reference_solution": "def solve(names):\n    return sorted(names, key=str.lower)\n",
+    "test_source": "from solution import solve\n\ndef test_case_insensitive_sort():\n    assert solve(['zoe', 'Ada', 'bob']) == ['Ada', 'bob', 'zoe']\n\ndef test_same_letter_case_order():\n    assert solve(['beta', 'Alpha']) == ['Alpha', 'beta']\n",
+    "attempt_number": 4,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:51.064Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 219,
+  "fields": {
+    "generation_run": 27,
+    "problem_statement": "Write solve(first, second) to return a set containing values that appear in both input lists.",
+    "reference_solution": "def solve(first, second):\n    return set(first) & set(second)\n",
+    "test_source": "from solution import solve\n\ndef test_common_values():\n    assert solve([1, 2, 2, 3], [2, 3, 4]) == {2, 3}\n\ndef test_no_common_values():\n    assert solve([1], [2]) == set()\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:52.522Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 220,
+  "fields": {
+    "generation_run": 27,
+    "problem_statement": "Write solve(items) to return True if items contains any duplicate value, otherwise return False.",
+    "reference_solution": "def solve(items):\n    return len(items) != len(set(items))\n",
+    "test_source": "from solution import solve\n\ndef test_duplicates():\n    assert solve(['a', 'b', 'a']) is True\n\ndef test_unique_items():\n    assert solve([1, 2, 3]) is False\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:52.959Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 221,
+  "fields": {
+    "generation_run": 27,
+    "problem_statement": "Write solve(first, second) to return a set of values found in first but not in second.",
+    "reference_solution": "def solve(first, second):\n    return set(first) - set(second)\n",
+    "test_source": "from solution import solve\n\ndef test_difference():\n    assert solve([1, 2, 3, 3], [2, 4]) == {1, 3}\n\ndef test_empty_difference():\n    assert solve([1], [1]) == set()\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:53.411Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 222,
+  "fields": {
+    "generation_run": 27,
+    "problem_statement": "Write solve(groups) to return the union of every set in groups. groups may be empty.",
+    "reference_solution": "def solve(groups):\n    result = set()\n    for group in groups:\n        result |= group\n    return result\n",
+    "test_source": "from solution import solve\n\ndef test_union_of_groups():\n    assert solve([{1, 2}, {2, 3}, {4}]) == {1, 2, 3, 4}\n\ndef test_no_groups():\n    assert solve([]) == set()\n",
+    "attempt_number": 4,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:53.836Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 223,
+  "fields": {
+    "generation_run": 28,
+    "problem_statement": "Write solve(numbers) as a generator function that yields each even number from numbers in order.",
+    "reference_solution": "def solve(numbers):\n    for number in numbers:\n        if number % 2 == 0:\n            yield number\n",
+    "test_source": "from solution import solve\n\ndef test_yields_evens():\n    assert list(solve([1, 2, 3, 4, 5])) == [2, 4]\n\ndef test_empty_input():\n    assert list(solve([])) == []\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:55.310Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 224,
+  "fields": {
+    "generation_run": 28,
+    "problem_statement": "Write solve(text) as a generator function that yields each word in text, one at a time. Words are separated by whitespace.",
+    "reference_solution": "def solve(text):\n    for word in text.split():\n        yield word\n",
+    "test_source": "from solution import solve\n\ndef test_yields_words():\n    assert list(solve('one two  three')) == ['one', 'two', 'three']\n\ndef test_blank_text():\n    assert list(solve('')) == []\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:55.771Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 225,
+  "fields": {
+    "generation_run": 28,
+    "problem_statement": "Write solve(start, stop) as a generator function that yields the integers from start up to but not including stop.",
+    "reference_solution": "def solve(start, stop):\n    current = start\n    while current < stop:\n        yield current\n        current += 1\n",
+    "test_source": "from solution import solve\n\ndef test_integer_range():\n    assert list(solve(3, 7)) == [3, 4, 5, 6]\n\ndef test_empty_range():\n    assert list(solve(5, 5)) == []\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:56.207Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 226,
+  "fields": {
+    "generation_run": 29,
+    "problem_statement": "Write solve(numbers, target) to return the index of target in the sorted list numbers using binary search. Return -1 when target is absent.",
+    "reference_solution": "def solve(numbers, target):\n    low = 0\n    high = len(numbers) - 1\n    while low <= high:\n        middle = (low + high) // 2\n        if numbers[middle] == target:\n            return middle\n        if numbers[middle] < target:\n            low = middle + 1\n        else:\n            high = middle - 1\n    return -1\n",
+    "test_source": "from solution import solve\n\ndef test_finds_target():\n    assert solve([1, 3, 5, 7, 9], 7) == 3\n\ndef test_absent_target():\n    assert solve([1, 3, 5], 4) == -1\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:57.680Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 227,
+  "fields": {
+    "generation_run": 29,
+    "problem_statement": "Write solve(numbers, target) to return True if target occurs in the sorted list numbers, otherwise False. Use binary search.",
+    "reference_solution": "def solve(numbers, target):\n    left, right = 0, len(numbers) - 1\n    while left <= right:\n        middle = (left + right) // 2\n        if numbers[middle] == target:\n            return True\n        if numbers[middle] < target:\n            left = middle + 1\n        else:\n            right = middle - 1\n    return False\n",
+    "test_source": "from solution import solve\n\ndef test_present_value():\n    assert solve([2, 4, 6, 8], 6) is True\n\ndef test_missing_value():\n    assert solve([2, 4, 6, 8], 5) is False\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:58.128Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 228,
+  "fields": {
+    "generation_run": 29,
+    "problem_statement": "Write solve(numbers, target) to return the insertion index for target in the sorted list numbers. If target is already present, return its index.",
+    "reference_solution": "def solve(numbers, target):\n    low, high = 0, len(numbers)\n    while low < high:\n        middle = (low + high) // 2\n        if numbers[middle] < target:\n            low = middle + 1\n        else:\n            high = middle\n    return low\n",
+    "test_source": "from solution import solve\n\ndef test_insert_between_values():\n    assert solve([1, 3, 5, 7], 4) == 2\n\ndef test_existing_value():\n    assert solve([1, 3, 5, 7], 5) == 2\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:02:58.598Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 229,
+  "fields": {
+    "generation_run": 30,
+    "problem_statement": "Write solve(first, second) to return the Levenshtein edit distance between two strings. An insertion, deletion, or replacement costs 1. It must handle empty strings and may not use recursion.",
+    "reference_solution": "def solve(first, second):\n    previous = list(range(len(second) + 1))\n    for i, left in enumerate(first, 1):\n        current = [i]\n        for j, right in enumerate(second, 1):\n            current.append(min(current[-1] + 1, previous[j] + 1, previous[j - 1] + (left != right)))\n        previous = current\n    return previous[-1]\n",
+    "test_source": "from solution import solve\n\ndef test_common_edit_distance():\n    assert solve('kitten', 'sitting') == 3\n\ndef test_empty_boundaries():\n    assert solve('', 'abc') == 3\n    assert solve('', '') == 0\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:11:57.528Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 230,
+  "fields": {
+    "generation_run": 30,
+    "problem_statement": "Write solve(coins, amount) to return the fewest coins needed to make amount, or -1 if it is impossible. Each positive coin denomination may be used any number of times. Return 0 for amount 0.",
+    "reference_solution": "def solve(coins, amount):\n    best = [amount + 1] * (amount + 1)\n    best[0] = 0\n    for value in range(1, amount + 1):\n        for coin in coins:\n            if coin <= value:\n                best[value] = min(best[value], best[value - coin] + 1)\n    return -1 if best[amount] == amount + 1 else best[amount]\n",
+    "test_source": "from solution import solve\n\ndef test_minimum_coins():\n    assert solve([1, 3, 4], 6) == 2\n\ndef test_impossible_and_zero():\n    assert solve([2], 3) == -1\n    assert solve([2, 5], 0) == 0\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:11:57.999Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 231,
+  "fields": {
+    "generation_run": 30,
+    "problem_statement": "Write solve(values) to return the largest possible sum of non-adjacent values. You may choose no values, so an all-negative list returns 0. Handle an empty list.",
+    "reference_solution": "def solve(values):\n    previous_two = 0\n    previous_one = 0\n    for value in values:\n        previous_two, previous_one = previous_one, max(previous_one, previous_two + value)\n    return previous_one\n",
+    "test_source": "from solution import solve\n\ndef test_skips_adjacent_values():\n    assert solve([3, 2, 7, 10]) == 13\n\ndef test_empty_and_negative_values():\n    assert solve([]) == 0\n    assert solve([-4, -1]) == 0\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:11:58.434Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 232,
+  "fields": {
+    "generation_run": 30,
+    "problem_statement": "Write solve(items, capacity) where items is a list of (weight, value) integer tuples. Return the maximum value obtainable with total weight at most capacity; each item can be chosen at most once. Handle capacity 0.",
+    "reference_solution": "def solve(items, capacity):\n    best = [0] * (capacity + 1)\n    for weight, value in items:\n        for remaining in range(capacity, weight - 1, -1):\n            best[remaining] = max(best[remaining], best[remaining - weight] + value)\n    return best[capacity]\n",
+    "test_source": "from solution import solve\n\ndef test_zero_one_knapsack():\n    assert solve([(2, 3), (3, 4), (4, 5)], 5) == 7\n\ndef test_zero_capacity():\n    assert solve([(1, 10)], 0) == 0\n",
+    "attempt_number": 4,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:11:58.883Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 233,
+  "fields": {
+    "generation_run": 30,
+    "problem_statement": "Write solve(coins, amount) to return the number of distinct combinations of coins that total amount. Coin order does not create a new combination, every positive denomination can be reused, and amount 0 has one empty combination.",
+    "reference_solution": "def solve(coins, amount):\n    ways = [0] * (amount + 1)\n    ways[0] = 1\n    for coin in coins:\n        for total in range(coin, amount + 1):\n            ways[total] += ways[total - coin]\n    return ways[amount]\n",
+    "test_source": "from solution import solve\n\ndef test_unordered_coin_combinations():\n    assert solve([1, 2, 5], 5) == 4\n\ndef test_zero_and_impossible():\n    assert solve([2], 0) == 1\n    assert solve([2], 3) == 0\n",
+    "attempt_number": 5,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:11:59.325Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 234,
+  "fields": {
+    "generation_run": 31,
+    "problem_statement": "Write solve(graph) to return True if the directed graph contains a cycle, otherwise False. graph maps each node to a list of outgoing neighbors; neighbors absent as keys are still valid nodes.",
+    "reference_solution": "def solve(graph):\n    visiting = set()\n    visited = set()\n    def visit(node):\n        if node in visiting:\n            return True\n        if node in visited:\n            return False\n        visiting.add(node)\n        for neighbor in graph.get(node, []):\n            if visit(neighbor):\n                return True\n        visiting.remove(node)\n        visited.add(node)\n        return False\n    return any(visit(node) for node in graph)\n",
+    "test_source": "from solution import solve\n\ndef test_cycle_and_leaf_neighbor():\n    assert solve({'a': ['b'], 'b': ['c'], 'c': ['a']}) is True\n    assert solve({'a': ['missing']}) is False\n\ndef test_empty_graph():\n    assert solve({}) is False\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:00.802Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 235,
+  "fields": {
+    "generation_run": 31,
+    "problem_statement": "Write solve(graph) to return a topological ordering of a directed acyclic graph. When more than one node has no remaining prerequisites, choose the lexicographically smallest string node. Include neighbors absent as keys. Return [] if a cycle exists.",
+    "reference_solution": "def solve(graph):\n    nodes = set(graph)\n    for neighbors in graph.values():\n        nodes.update(neighbors)\n    indegree = {node: 0 for node in nodes}\n    for neighbors in graph.values():\n        for neighbor in neighbors:\n            indegree[neighbor] += 1\n    ready = sorted(node for node, degree in indegree.items() if degree == 0)\n    order = []\n    while ready:\n        node = ready.pop(0)\n        order.append(node)\n        for neighbor in graph.get(node, []):\n            indegree[neighbor] -= 1\n            if indegree[neighbor] == 0:\n                ready.append(neighbor)\n                ready.sort()\n    return order if len(order) == len(nodes) else []\n",
+    "test_source": "from solution import solve\n\ndef test_tie_breaking_order():\n    assert solve({'cook': ['eat'], 'shop': ['cook'], 'clean': []}) == ['clean', 'shop', 'cook', 'eat']\n\ndef test_cycle_returns_empty():\n    assert solve({'a': ['b'], 'b': ['a']}) == []\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:01.259Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 236,
+  "fields": {
+    "generation_run": 31,
+    "problem_statement": "Write solve(graph, start) to return the shortest number of directed edges from start to every reachable node as a dictionary. Include start with distance 0. graph may be empty and missing neighbor keys are leaves.",
+    "reference_solution": "def solve(graph, start):\n    distances = {start: 0}\n    queue = [start]\n    index = 0\n    while index < len(queue):\n        node = queue[index]\n        index += 1\n        for neighbor in graph.get(node, []):\n            if neighbor not in distances:\n                distances[neighbor] = distances[node] + 1\n                queue.append(neighbor)\n    return distances\n",
+    "test_source": "from solution import solve\n\ndef test_breadth_first_distances():\n    assert solve({'a': ['b', 'c'], 'b': ['d'], 'c': ['d']}, 'a') == {'a': 0, 'b': 1, 'c': 1, 'd': 2}\n\ndef test_start_not_in_graph():\n    assert solve({}, 'x') == {'x': 0}\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:02.090Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 237,
+  "fields": {
+    "generation_run": 31,
+    "problem_statement": "Write solve(graph) to return the number of weakly connected components in a directed graph. Treat every directed edge as undirected, and include nodes that appear only as neighbors.",
+    "reference_solution": "def solve(graph):\n    nodes = set(graph)\n    adjacent = {node: set() for node in nodes}\n    for node, neighbors in graph.items():\n        for neighbor in neighbors:\n            nodes.add(neighbor)\n            adjacent.setdefault(node, set()).add(neighbor)\n            adjacent.setdefault(neighbor, set()).add(node)\n    seen = set()\n    count = 0\n    for node in nodes:\n        if node not in seen:\n            count += 1\n            stack = [node]\n            seen.add(node)\n            while stack:\n                current = stack.pop()\n                for neighbor in adjacent[current]:\n                    if neighbor not in seen:\n                        seen.add(neighbor)\n                        stack.append(neighbor)\n    return count\n",
+    "test_source": "from solution import solve\n\ndef test_multiple_components():\n    assert solve({'a': ['b'], 'c': [], 'd': ['e']}) == 3\n\ndef test_empty_graph():\n    assert solve({}) == 0\n",
+    "attempt_number": 4,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:03.132Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 238,
+  "fields": {
+    "generation_run": 31,
+    "problem_statement": "Write solve(graph, start, end) to return one shortest path from start to end in a directed graph, including both endpoints. If several shortest paths exist, choose the one found by visiting each adjacency list in its given order. Return [] when unreachable.",
+    "reference_solution": "def solve(graph, start, end):\n    parents = {start: None}\n    queue = [start]\n    index = 0\n    while index < len(queue):\n        node = queue[index]\n        index += 1\n        if node == end:\n            break\n        for neighbor in graph.get(node, []):\n            if neighbor not in parents:\n                parents[neighbor] = node\n                queue.append(neighbor)\n    if end not in parents:\n        return []\n    path = []\n    node = end\n    while node is not None:\n        path.append(node)\n        node = parents[node]\n    return path[::-1]\n",
+    "test_source": "from solution import solve\n\ndef test_shortest_path_and_tie_order():\n    assert solve({'a': ['b', 'c'], 'b': ['d'], 'c': ['d']}, 'a', 'd') == ['a', 'b', 'd']\n\ndef test_unreachable_and_same_node():\n    assert solve({'a': []}, 'a', 'z') == []\n    assert solve({}, 'x', 'x') == ['x']\n",
+    "attempt_number": 5,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:03.566Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 239,
+  "fields": {
+    "generation_run": 32,
+    "problem_statement": "Write solve(intervals) to return the maximum number of non-overlapping half-open intervals (start, end) you can select. An interval ending at t does not overlap one starting at t. For equal end times, choose the interval with the earlier start.",
+    "reference_solution": "def solve(intervals):\n    ordered = sorted(intervals, key=lambda interval: (interval[1], interval[0]))\n    count = 0\n    finish = None\n    for start, end in ordered:\n        if finish is None or start >= finish:\n            count += 1\n            finish = end\n    return count\n",
+    "test_source": "from solution import solve\n\ndef test_touching_intervals_can_both_be_selected():\n    assert solve([(1, 3), (3, 5), (2, 4), (5, 6)]) == 3\n\ndef test_empty_input():\n    assert solve([]) == 0\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:05.032Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 240,
+  "fields": {
+    "generation_run": 32,
+    "problem_statement": "Write solve(intervals) to merge overlapping or touching closed integer intervals. Return merged intervals sorted by start. For example, (1, 3) and (3, 5) merge into (1, 5). Handle an empty list.",
+    "reference_solution": "def solve(intervals):\n    if not intervals:\n        return []\n    ordered = sorted(intervals)\n    merged = [list(ordered[0])]\n    for start, end in ordered[1:]:\n        if start <= merged[-1][1]:\n            merged[-1][1] = max(merged[-1][1], end)\n        else:\n            merged.append([start, end])\n    return [tuple(interval) for interval in merged]\n",
+    "test_source": "from solution import solve\n\ndef test_overlapping_and_touching_intervals():\n    assert solve([(5, 7), (1, 3), (3, 5), (10, 10)]) == [(1, 7), (10, 10)]\n\ndef test_empty_intervals():\n    assert solve([]) == []\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:05.464Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 241,
+  "fields": {
+    "generation_run": 32,
+    "problem_statement": "Write solve(intervals) to return the minimum number of rooms needed for half-open intervals (start, end). Intervals that touch at an endpoint may use the same room. Handle an empty list.",
+    "reference_solution": "def solve(intervals):\n    active = []\n    maximum = 0\n    for start, end in sorted(intervals):\n        active = [finish for finish in active if finish > start]\n        active.append(end)\n        maximum = max(maximum, len(active))\n    return maximum\n",
+    "test_source": "from solution import solve\n\ndef test_overlaps_and_touching():\n    assert solve([(0, 5), (1, 2), (2, 6), (6, 7)]) == 2\n\ndef test_empty():\n    assert solve([]) == 0\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:05.899Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 242,
+  "fields": {
+    "generation_run": 32,
+    "problem_statement": "Write solve(intervals, point) to return how many closed intervals contain point, including both endpoints. Intervals may be unordered.",
+    "reference_solution": "def solve(intervals, point):\n    return sum(start <= point <= end for start, end in intervals)\n",
+    "test_source": "from solution import solve\n\ndef test_endpoint_counts():\n    assert solve([(1, 3), (3, 5), (4, 8)], 3) == 2\n\ndef test_empty():\n    assert solve([], 0) == 0\n",
+    "attempt_number": 4,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:06.345Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 243,
+  "fields": {
+    "generation_run": 33,
+    "problem_statement": "Write solve(matrix) to return its elements in clockwise spiral order. matrix may be empty, have one row, or have one column.",
+    "reference_solution": "def solve(matrix):\n    if not matrix:\n        return []\n    top, bottom, left, right = 0, len(matrix)-1, 0, len(matrix[0])-1\n    result = []\n    while top <= bottom and left <= right:\n        result += matrix[top][left:right+1]\n        top += 1\n        for row in range(top, bottom+1): result.append(matrix[row][right])\n        right -= 1\n        if top <= bottom:\n            result += matrix[bottom][left:right+1][::-1]\n            bottom -= 1\n        if left <= right:\n            for row in range(bottom, top-1, -1): result.append(matrix[row][left])\n            left += 1\n    return result\n",
+    "test_source": "from solution import solve\n\ndef test_rectangular_spiral():\n    assert solve([[1,2,3],[4,5,6]]) == [1,2,3,6,5,4]\n\ndef test_empty_and_singleton():\n    assert solve([]) == []\n    assert solve([[9]]) == [9]\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:07.799Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 244,
+  "fields": {
+    "generation_run": 33,
+    "problem_statement": "Write solve(matrix) to rotate a square matrix 90 degrees clockwise in place and return the same matrix object. An empty matrix is valid.",
+    "reference_solution": "def solve(matrix):\n    n = len(matrix)\n    for row in range(n):\n        for column in range(row + 1, n):\n            matrix[row][column], matrix[column][row] = matrix[column][row], matrix[row][column]\n    for row in matrix:\n        row.reverse()\n    return matrix\n",
+    "test_source": "from solution import solve\n\ndef test_rotation_and_identity():\n    matrix = [[1,2],[3,4]]\n    assert solve(matrix) is matrix\n    assert matrix == [[3,1],[4,2]]\n\ndef test_empty():\n    assert solve([]) == []\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:08.229Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 245,
+  "fields": {
+    "generation_run": 33,
+    "problem_statement": "Write solve(matrix) to return True if matrix is a valid square identity matrix, otherwise False. The empty matrix is a valid identity matrix.",
+    "reference_solution": "def solve(matrix):\n    return all(len(row) == len(matrix) and value == (1 if row == column else 0) for row, values in enumerate(matrix) for column, value in enumerate(values))\n",
+    "test_source": "from solution import solve\n\ndef test_identity_and_invalid_shape():\n    assert solve([[1,0],[0,1]]) is True\n    assert solve([[1,0,0],[0,1]]) is False\n\ndef test_empty():\n    assert solve([]) is True\n",
+    "attempt_number": 3,
+    "verdict": "fail",
+    "failure_reason": "F.                                                                       [100%]\n=================================== FAILURES ===================================\n_______________________ test_identity_and_invalid_shape ________________________\n\n    def test_identity_and_invalid_shape():\n>       assert solve([[1,0],[0,1]]) is True\n\ntest_solution.py:4: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nsolution.py:2: in solve\n    return all(len(row) == len(matrix) and value == (1 if row == column else 0) for row, values in enumerate(matrix) for column, value in enumerate(values))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n.0 = <enumerate object at 0x7f710fc6d7b0>\n\n>   return all(len(row) == len(matrix) and value == (1 if row == column else 0) for row, values in enumerate(matrix) for column, value in enumerate(values))\nE   TypeError: object of type 'int' has no len()\n\nsolution.py:2: TypeError\n=========================== short test summary info ============================\nFAILED test_solution.py::test_identity_and_invalid_shape - TypeError: object ...\n1 failed, 1 passed in 0.01s",
+    "created_at": "2026-07-16T19:12:08.668Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 246,
+  "fields": {
+    "generation_run": 33,
+    "problem_statement": "Write solve(matrix) to return a new matrix with rows and columns transposed. Handle an empty matrix and a matrix with zero rows only.",
+    "reference_solution": "def solve(matrix):\n    if not matrix:\n        return []\n    return [list(column) for column in zip(*matrix)]\n",
+    "test_source": "from solution import solve\n\ndef test_rectangular_transpose():\n    assert solve([[1,2,3],[4,5,6]]) == [[1,4],[2,5],[3,6]]\n\ndef test_empty():\n    assert solve([]) == []\n",
+    "attempt_number": 4,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:09.108Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 247,
+  "fields": {
+    "generation_run": 34,
+    "problem_statement": "Write solve(text) to return True if brackets (), [], and {} are correctly nested and matched. Ignore all non-bracket characters. Empty text is valid.",
+    "reference_solution": "def solve(text):\n    pairs = {')': '(', ']': '[', '}': '{'}\n    stack = []\n    for character in text:\n        if character in '([{': stack.append(character)\n        elif character in pairs:\n            if not stack or stack.pop() != pairs[character]: return False\n    return not stack\n",
+    "test_source": "from solution import solve\n\ndef test_nested_and_mismatched():\n    assert solve('a{b[c(d)]}') is True\n    assert solve('([)]') is False\n\ndef test_empty():\n    assert solve('') is True\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:10.567Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 248,
+  "fields": {
+    "generation_run": 34,
+    "problem_statement": "Write solve(expression) to evaluate a non-empty expression containing non-negative integers, +, and *, with arbitrary whitespace. Multiplication has higher precedence. Do not use eval.",
+    "reference_solution": "def solve(expression):\n    total = 0\n    for term in expression.replace(' ', '').split('+'):\n        product = 1\n        for factor in term.split('*'): product *= int(factor)\n        total += product\n    return total\n",
+    "test_source": "from solution import solve\n\ndef test_precedence_and_spaces():\n    assert solve('2 + 3 * 4 + 1') == 15\n\ndef test_single_number():\n    assert solve('0') == 0\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:11.002Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 249,
+  "fields": {
+    "generation_run": 34,
+    "problem_statement": "Write solve(text) to split a comma-separated string, except commas inside parentheses do not split fields. Parentheses may be nested. Return fields without trimming whitespace.",
+    "reference_solution": "def solve(text):\n    fields, current, depth = [], [], 0\n    for character in text:\n        if character == '(': depth += 1\n        elif character == ')': depth -= 1\n        if character == ',' and depth == 0:\n            fields.append(''.join(current)); current = []\n        else: current.append(character)\n    fields.append(''.join(current))\n    return fields\n",
+    "test_source": "from solution import solve\n\ndef test_nested_parentheses():\n    assert solve('a,(b,c(d,e)),f') == ['a', '(b,c(d,e))', 'f']\n\ndef test_empty_field():\n    assert solve('a,,b') == ['a', '', 'b']\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:11.441Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 250,
+  "fields": {
+    "generation_run": 34,
+    "problem_statement": "Write solve(text) to decode a run-length string made of a single uppercase letter followed by one or more decimal digits. Return the expanded string. An empty input returns an empty string.",
+    "reference_solution": "def solve(text):\n    result = []\n    index = 0\n    while index < len(text):\n        letter = text[index]; index += 1\n        start = index\n        while index < len(text) and text[index].isdigit(): index += 1\n        result.append(letter * int(text[start:index]))\n    return ''.join(result)\n",
+    "test_source": "from solution import solve\n\ndef test_multi_digit_counts():\n    assert solve('A2B10C1') == 'AABBBBBBBBBBC'\n\ndef test_empty():\n    assert solve('') == ''\n",
+    "attempt_number": 4,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:11.882Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 251,
+  "fields": {
+    "generation_run": 35,
+    "problem_statement": "Write solve(items) to return all unique permutations of items in lexicographic order. items may contain duplicate comparable strings; the empty list has one permutation: [[]].",
+    "reference_solution": "def solve(items):\n    if not items: return [[]]\n    result = []\n    for value in sorted(set(items)):\n        rest = list(items); rest.remove(value)\n        for permutation in solve(rest): result.append([value] + permutation)\n    return result\n",
+    "test_source": "from solution import solve\n\ndef test_duplicates():\n    assert solve(['b','a','a']) == [['a','a','b'],['a','b','a'],['b','a','a']]\n\ndef test_empty():\n    assert solve([]) == [[]]\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:13.344Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 252,
+  "fields": {
+    "generation_run": 35,
+    "problem_statement": "Write solve(n) to return the number of ways to partition non-negative integer n into positive integers, ignoring order. solve(0) is 1.",
+    "reference_solution": "def solve(n):\n    ways = [0] * (n + 1); ways[0] = 1\n    for part in range(1, n + 1):\n        for total in range(part, n + 1): ways[total] += ways[total-part]\n    return ways[n]\n",
+    "test_source": "from solution import solve\n\ndef test_partitions():\n    assert solve(5) == 7\n\ndef test_zero():\n    assert solve(0) == 1\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:13.784Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 253,
+  "fields": {
+    "generation_run": 35,
+    "problem_statement": "Write solve(items, size) to return all size-element combinations in input order. Each combination preserves input order; size 0 returns [[]], and size greater than the list length returns [].",
+    "reference_solution": "def solve(items, size):\n    if size == 0: return [[]]\n    if size > len(items): return []\n    result = []\n    for index, item in enumerate(items):\n        for tail in solve(items[index+1:], size-1): result.append([item] + tail)\n    return result\n",
+    "test_source": "from solution import solve\n\ndef test_combinations():\n    assert solve([1,2,3], 2) == [[1,2],[1,3],[2,3]]\n\ndef test_boundaries():\n    assert solve([1], 0) == [[]]\n    assert solve([1], 2) == []\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:14.210Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 254,
+  "fields": {
+    "generation_run": 35,
+    "problem_statement": "Write solve(n) to return the nth row of Pascal's triangle, with row 0 equal to [1]. n is non-negative.",
+    "reference_solution": "def solve(n):\n    row = [1]\n    for _ in range(n): row = [1] + [row[i] + row[i+1] for i in range(len(row)-1)] + [1]\n    return row\n",
+    "test_source": "from solution import solve\n\ndef test_row():\n    assert solve(4) == [1,4,6,4,1]\n\ndef test_zero():\n    assert solve(0) == [1]\n",
+    "attempt_number": 4,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:14.642Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 255,
+  "fields": {
+    "generation_run": 36,
+    "problem_statement": "Write solve(values) to return all subsets of values as lists, ordered by increasing bitmask from 0 through 2**len(values)-1. Preserve the input order inside each subset; empty input returns [[]].",
+    "reference_solution": "def solve(values):\n    return [[values[i] for i in range(len(values)) if mask & (1 << i)] for mask in range(1 << len(values))]\n",
+    "test_source": "from solution import solve\n\ndef test_bitmask_order():\n    assert solve(['a','b']) == [[],['a'],['b'],['a','b']]\n\ndef test_empty():\n    assert solve([]) == [[]]\n",
+    "attempt_number": 1,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:16.104Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 256,
+  "fields": {
+    "generation_run": 36,
+    "problem_statement": "Write solve(values) where every integer appears exactly twice except one integer that appears once. Return that single integer. Values may include negatives.",
+    "reference_solution": "def solve(values):\n    result = 0\n    for value in values: result ^= value\n    return result\n",
+    "test_source": "from solution import solve\n\ndef test_single_number():\n    assert solve([4,1,2,1,2]) == 4\n\ndef test_negative():\n    assert solve([-1,3,3]) == -1\n",
+    "attempt_number": 2,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:16.540Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 257,
+  "fields": {
+    "generation_run": 36,
+    "problem_statement": "Write solve(number) to return the number of 1 bits in the binary representation of non-negative integer number. Return 0 for 0.",
+    "reference_solution": "def solve(number):\n    count = 0\n    while number:\n        count += number & 1\n        number >>= 1\n    return count\n",
+    "test_source": "from solution import solve\n\ndef test_counts_bits():\n    assert solve(13) == 3\n\ndef test_zero():\n    assert solve(0) == 0\n",
+    "attempt_number": 3,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:16.971Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 258,
+  "fields": {
+    "generation_run": 36,
+    "problem_statement": "Write solve(number) to return True exactly when non-negative integer number is a power of two. Zero is not a power of two.",
+    "reference_solution": "def solve(number):\n    return number > 0 and number & (number - 1) == 0\n",
+    "test_source": "from solution import solve\n\ndef test_powers_and_boundaries():\n    assert solve(1) is True\n    assert solve(16) is True\n    assert solve(0) is False\n    assert solve(18) is False\n",
+    "attempt_number": 4,
+    "verdict": "pass",
+    "failure_reason": "",
+    "created_at": "2026-07-16T19:12:17.401Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 1,
+  "fields": {
+    "winning_candidate": 199,
+    "published_at": "2026-07-16T19:00:56.145Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 2,
+  "fields": {
+    "winning_candidate": 200,
+    "published_at": "2026-07-16T19:00:56.584Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 3,
+  "fields": {
+    "winning_candidate": 201,
+    "published_at": "2026-07-16T19:00:57.032Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 4,
+  "fields": {
+    "winning_candidate": 202,
+    "published_at": "2026-07-16T19:00:57.473Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 5,
+  "fields": {
+    "winning_candidate": 203,
+    "published_at": "2026-07-16T19:02:41.854Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 6,
+  "fields": {
+    "winning_candidate": 204,
+    "published_at": "2026-07-16T19:02:42.282Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 7,
+  "fields": {
+    "winning_candidate": 205,
+    "published_at": "2026-07-16T19:02:42.733Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 8,
+  "fields": {
+    "winning_candidate": 206,
+    "published_at": "2026-07-16T19:02:43.162Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 9,
+  "fields": {
+    "winning_candidate": 207,
+    "published_at": "2026-07-16T19:02:44.629Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 10,
+  "fields": {
+    "winning_candidate": 208,
+    "published_at": "2026-07-16T19:02:45.080Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 11,
+  "fields": {
+    "winning_candidate": 209,
+    "published_at": "2026-07-16T19:02:45.516Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 12,
+  "fields": {
+    "winning_candidate": 210,
+    "published_at": "2026-07-16T19:02:45.946Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 13,
+  "fields": {
+    "winning_candidate": 211,
+    "published_at": "2026-07-16T19:02:47.407Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 14,
+  "fields": {
+    "winning_candidate": 212,
+    "published_at": "2026-07-16T19:02:47.839Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 15,
+  "fields": {
+    "winning_candidate": 213,
+    "published_at": "2026-07-16T19:02:48.270Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 16,
+  "fields": {
+    "winning_candidate": 214,
+    "published_at": "2026-07-16T19:02:48.711Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 17,
+  "fields": {
+    "winning_candidate": 215,
+    "published_at": "2026-07-16T19:02:50.191Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 18,
+  "fields": {
+    "winning_candidate": 216,
+    "published_at": "2026-07-16T19:02:50.625Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 19,
+  "fields": {
+    "winning_candidate": 217,
+    "published_at": "2026-07-16T19:02:51.061Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 20,
+  "fields": {
+    "winning_candidate": 218,
+    "published_at": "2026-07-16T19:02:51.497Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 21,
+  "fields": {
+    "winning_candidate": 219,
+    "published_at": "2026-07-16T19:02:52.957Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 22,
+  "fields": {
+    "winning_candidate": 220,
+    "published_at": "2026-07-16T19:02:53.409Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 23,
+  "fields": {
+    "winning_candidate": 221,
+    "published_at": "2026-07-16T19:02:53.833Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 24,
+  "fields": {
+    "winning_candidate": 222,
+    "published_at": "2026-07-16T19:02:54.278Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 25,
+  "fields": {
+    "winning_candidate": 223,
+    "published_at": "2026-07-16T19:02:55.768Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 26,
+  "fields": {
+    "winning_candidate": 224,
+    "published_at": "2026-07-16T19:02:56.205Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 27,
+  "fields": {
+    "winning_candidate": 225,
+    "published_at": "2026-07-16T19:02:56.641Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 28,
+  "fields": {
+    "winning_candidate": 226,
+    "published_at": "2026-07-16T19:02:58.126Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 29,
+  "fields": {
+    "winning_candidate": 227,
+    "published_at": "2026-07-16T19:02:58.595Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 30,
+  "fields": {
+    "winning_candidate": 228,
+    "published_at": "2026-07-16T19:02:59.092Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 31,
+  "fields": {
+    "winning_candidate": 229,
+    "published_at": "2026-07-16T19:11:57.995Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 32,
+  "fields": {
+    "winning_candidate": 230,
+    "published_at": "2026-07-16T19:11:58.432Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 33,
+  "fields": {
+    "winning_candidate": 231,
+    "published_at": "2026-07-16T19:11:58.881Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 34,
+  "fields": {
+    "winning_candidate": 232,
+    "published_at": "2026-07-16T19:11:59.323Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 35,
+  "fields": {
+    "winning_candidate": 233,
+    "published_at": "2026-07-16T19:11:59.770Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 36,
+  "fields": {
+    "winning_candidate": 234,
+    "published_at": "2026-07-16T19:12:01.257Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 37,
+  "fields": {
+    "winning_candidate": 235,
+    "published_at": "2026-07-16T19:12:02.070Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 38,
+  "fields": {
+    "winning_candidate": 236,
+    "published_at": "2026-07-16T19:12:03.128Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 39,
+  "fields": {
+    "winning_candidate": 237,
+    "published_at": "2026-07-16T19:12:03.563Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 40,
+  "fields": {
+    "winning_candidate": 238,
+    "published_at": "2026-07-16T19:12:04.004Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 41,
+  "fields": {
+    "winning_candidate": 239,
+    "published_at": "2026-07-16T19:12:05.461Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 42,
+  "fields": {
+    "winning_candidate": 240,
+    "published_at": "2026-07-16T19:12:05.897Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 43,
+  "fields": {
+    "winning_candidate": 241,
+    "published_at": "2026-07-16T19:12:06.343Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 44,
+  "fields": {
+    "winning_candidate": 242,
+    "published_at": "2026-07-16T19:12:06.775Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 45,
+  "fields": {
+    "winning_candidate": 243,
+    "published_at": "2026-07-16T19:12:08.225Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 46,
+  "fields": {
+    "winning_candidate": 244,
+    "published_at": "2026-07-16T19:12:08.666Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 47,
+  "fields": {
+    "winning_candidate": 246,
+    "published_at": "2026-07-16T19:12:09.545Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 48,
+  "fields": {
+    "winning_candidate": 247,
+    "published_at": "2026-07-16T19:12:11.000Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 49,
+  "fields": {
+    "winning_candidate": 248,
+    "published_at": "2026-07-16T19:12:11.438Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 50,
+  "fields": {
+    "winning_candidate": 249,
+    "published_at": "2026-07-16T19:12:11.879Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 51,
+  "fields": {
+    "winning_candidate": 250,
+    "published_at": "2026-07-16T19:12:12.324Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 52,
+  "fields": {
+    "winning_candidate": 251,
+    "published_at": "2026-07-16T19:12:13.781Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 53,
+  "fields": {
+    "winning_candidate": 252,
+    "published_at": "2026-07-16T19:12:14.206Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 54,
+  "fields": {
+    "winning_candidate": 253,
+    "published_at": "2026-07-16T19:12:14.640Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 55,
+  "fields": {
+    "winning_candidate": 254,
+    "published_at": "2026-07-16T19:12:15.078Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 56,
+  "fields": {
+    "winning_candidate": 255,
+    "published_at": "2026-07-16T19:12:16.538Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 57,
+  "fields": {
+    "winning_candidate": 256,
+    "published_at": "2026-07-16T19:12:16.969Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 58,
+  "fields": {
+    "winning_candidate": 257,
+    "published_at": "2026-07-16T19:12:17.398Z"
+  }
+},
+{
+  "model": "exercises.exercise",
+  "pk": 59,
+  "fields": {
+    "winning_candidate": 258,
+    "published_at": "2026-07-16T19:12:17.835Z"
+  }
+}
+]

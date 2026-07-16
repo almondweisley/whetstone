@@ -1,0 +1,1 @@
+{"problem_statement":"Write solve(text) to return text with all spaces removed.","reference_solution":"def solve(text):\n    return text.replace(' ', '')\n","test_source":"from solution import solve\n\ndef test_removes_spaces():\n    assert solve('hello wide world') == 'hellowideworld'\n\ndef test_no_spaces():\n    assert solve('python') == 'python'\n"}

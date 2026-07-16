@@ -1,0 +1,1 @@
+{"problem_statement":"Write solve(scores) to return the sum of all numeric values in the scores dictionary.","reference_solution":"def solve(scores):\n    return sum(scores.values())\n","test_source":"from solution import solve\n\ndef test_sums_values():\n    assert solve({'Ada': 10, 'Lin': 15, 'Sam': 5}) == 30\n\ndef test_empty_dictionary():\n    assert solve({}) == 0\n"}

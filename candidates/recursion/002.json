@@ -1,0 +1,1 @@
+{"problem_statement":"Write solve(text) recursively to return text reversed.","reference_solution":"def solve(text):\n    if len(text) <= 1:\n        return text\n    return solve(text[1:]) + text[0]\n","test_source":"from solution import solve\n\ndef test_reverses_text():\n    assert solve('recursion') == 'noisrucer'\n\ndef test_empty_text():\n    assert solve('') == ''\n"}

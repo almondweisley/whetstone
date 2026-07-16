@@ -1,0 +1,1 @@
+{"problem_statement":"Write solve(n) recursively to return the sum of all integers from 1 through n. For n equal to 0, return 0.","reference_solution":"def solve(n):\n    if n == 0:\n        return 0\n    return n + solve(n - 1)\n","test_source":"from solution import solve\n\ndef test_positive_sum():\n    assert solve(5) == 15\n\ndef test_zero():\n    assert solve(0) == 0\n"}
