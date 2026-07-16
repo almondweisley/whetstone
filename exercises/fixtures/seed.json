@@ -1,0 +1,1509 @@
+[
+{
+  "model": "exercises.generationrun",
+  "pk": 1,
+  "fields": {
+    "topic": "sorting",
+    "difficulty": "beginner",
+    "requested_count": 1,
+    "status": "completed",
+    "created_at": "2026-07-15T20:52:08.390Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 2,
+  "fields": {
+    "topic": "arrays",
+    "difficulty": "beginner",
+    "requested_count": 1,
+    "status": "completed",
+    "created_at": "2026-07-15T21:40:22.174Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 3,
+  "fields": {
+    "topic": "arrays",
+    "difficulty": "beginner",
+    "requested_count": 1,
+    "status": "completed",
+    "created_at": "2026-07-15T21:41:14.991Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 4,
+  "fields": {
+    "topic": "list comprehensions",
+    "difficulty": "beginner",
+    "requested_count": 3,
+    "status": "completed",
+    "created_at": "2026-07-16T08:10:35.379Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 5,
+  "fields": {
+    "topic": "dictionary iteration",
+    "difficulty": "beginner",
+    "requested_count": 3,
+    "status": "completed",
+    "created_at": "2026-07-16T08:11:34.631Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 6,
+  "fields": {
+    "topic": "string manipulation",
+    "difficulty": "beginner",
+    "requested_count": 3,
+    "status": "completed",
+    "created_at": "2026-07-16T08:12:28.699Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 7,
+  "fields": {
+    "topic": "recursion",
+    "difficulty": "intermediate",
+    "requested_count": 3,
+    "status": "completed",
+    "created_at": "2026-07-16T08:13:14.572Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 8,
+  "fields": {
+    "topic": "sorting with custom keys",
+    "difficulty": "intermediate",
+    "requested_count": 3,
+    "status": "completed",
+    "created_at": "2026-07-16T08:14:02.053Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 9,
+  "fields": {
+    "topic": "set operations",
+    "difficulty": "beginner",
+    "requested_count": 3,
+    "status": "completed",
+    "created_at": "2026-07-16T08:14:48.987Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 10,
+  "fields": {
+    "topic": "generators and yield",
+    "difficulty": "intermediate",
+    "requested_count": 3,
+    "status": "completed",
+    "created_at": "2026-07-16T08:15:36.804Z"
+  }
+},
+{
+  "model": "exercises.generationrun",
+  "pk": 11,
+  "fields": {
+    "topic": "binary search",
+    "difficulty": "intermediate",
+    "requested_count": 3,
+    "status": "completed",
+    "created_at": "2026-07-16T08:16:27.906Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 1,
+  "fields": {
+    "generation_run": 1,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 1,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-15T20:52:20.691Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 2,
+  "fields": {
+    "generation_run": 3,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 1,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-15T22:25:22.475Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 3,
+  "fields": {
+    "generation_run": 2,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 1,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-15T22:25:23.313Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 4,
+  "fields": {
+    "generation_run": 4,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 1,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:10:40.553Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 5,
+  "fields": {
+    "generation_run": 4,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 2,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:10:44.752Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 6,
+  "fields": {
+    "generation_run": 4,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 3,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:10:48.760Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 7,
+  "fields": {
+    "generation_run": 4,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 4,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:10:52.181Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 8,
+  "fields": {
+    "generation_run": 4,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 5,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:10:56.531Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 9,
+  "fields": {
+    "generation_run": 4,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 6,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:11:05.539Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 10,
+  "fields": {
+    "generation_run": 4,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 7,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:11:09.147Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 11,
+  "fields": {
+    "generation_run": 4,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 8,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:11:16.708Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 12,
+  "fields": {
+    "generation_run": 4,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 9,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:11:21.000Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 13,
+  "fields": {
+    "generation_run": 4,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 10,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:11:26.429Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 14,
+  "fields": {
+    "generation_run": 4,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 11,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:11:29.806Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 15,
+  "fields": {
+    "generation_run": 4,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 12,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:11:34.621Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 16,
+  "fields": {
+    "generation_run": 5,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 1,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:11:40.154Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 17,
+  "fields": {
+    "generation_run": 5,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 2,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:11:44.967Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 18,
+  "fields": {
+    "generation_run": 5,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 3,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:11:48.751Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 19,
+  "fields": {
+    "generation_run": 5,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 4,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:11:52.233Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 20,
+  "fields": {
+    "generation_run": 5,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 5,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:11:55.943Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 21,
+  "fields": {
+    "generation_run": 5,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 6,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:11:59.401Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 22,
+  "fields": {
+    "generation_run": 5,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 7,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:04.726Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 23,
+  "fields": {
+    "generation_run": 5,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 8,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:08.416Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 24,
+  "fields": {
+    "generation_run": 5,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 9,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:13.019Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 25,
+  "fields": {
+    "generation_run": 5,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 10,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:16.817Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 26,
+  "fields": {
+    "generation_run": 5,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 11,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:25.001Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 27,
+  "fields": {
+    "generation_run": 5,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 12,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:28.688Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 28,
+  "fields": {
+    "generation_run": 6,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 1,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:33.909Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 29,
+  "fields": {
+    "generation_run": 6,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 2,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:38.005Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 30,
+  "fields": {
+    "generation_run": 6,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 3,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:41.281Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 31,
+  "fields": {
+    "generation_run": 6,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 4,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:44.686Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 32,
+  "fields": {
+    "generation_run": 6,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 5,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:48.144Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 33,
+  "fields": {
+    "generation_run": 6,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 6,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:51.726Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 34,
+  "fields": {
+    "generation_run": 6,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 7,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:55.005Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 35,
+  "fields": {
+    "generation_run": 6,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 8,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:12:58.589Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 36,
+  "fields": {
+    "generation_run": 6,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 9,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:02.172Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 37,
+  "fields": {
+    "generation_run": 6,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 10,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:05.582Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 38,
+  "fields": {
+    "generation_run": 6,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 11,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:11.285Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 39,
+  "fields": {
+    "generation_run": 6,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 12,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:14.562Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 40,
+  "fields": {
+    "generation_run": 7,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 1,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:19.918Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 41,
+  "fields": {
+    "generation_run": 7,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 2,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:23.676Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 42,
+  "fields": {
+    "generation_run": 7,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 3,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:27.771Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 43,
+  "fields": {
+    "generation_run": 7,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 4,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:31.974Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 44,
+  "fields": {
+    "generation_run": 7,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 5,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:35.661Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 45,
+  "fields": {
+    "generation_run": 7,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 6,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:39.348Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 46,
+  "fields": {
+    "generation_run": 7,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 7,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:42.920Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 47,
+  "fields": {
+    "generation_run": 7,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 8,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:46.102Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 48,
+  "fields": {
+    "generation_run": 7,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 9,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:49.686Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 49,
+  "fields": {
+    "generation_run": 7,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 10,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:53.888Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 50,
+  "fields": {
+    "generation_run": 7,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 11,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:13:57.776Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 51,
+  "fields": {
+    "generation_run": 7,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 12,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:02.042Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 52,
+  "fields": {
+    "generation_run": 8,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 1,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:06.385Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 53,
+  "fields": {
+    "generation_run": 8,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 2,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:10.883Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 54,
+  "fields": {
+    "generation_run": 8,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 3,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:16.247Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 55,
+  "fields": {
+    "generation_run": 8,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 4,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:19.849Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 56,
+  "fields": {
+    "generation_run": 8,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 5,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:23.477Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 57,
+  "fields": {
+    "generation_run": 8,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 6,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:27.062Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 58,
+  "fields": {
+    "generation_run": 8,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 7,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:30.645Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 59,
+  "fields": {
+    "generation_run": 8,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 8,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:34.275Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 60,
+  "fields": {
+    "generation_run": 8,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 9,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:38.326Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 61,
+  "fields": {
+    "generation_run": 8,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 10,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:42.013Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 62,
+  "fields": {
+    "generation_run": 8,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 11,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:45.289Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 63,
+  "fields": {
+    "generation_run": 8,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 12,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:48.976Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 64,
+  "fields": {
+    "generation_run": 9,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 1,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:53.992Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 65,
+  "fields": {
+    "generation_run": 9,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 2,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:14:57.474Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 66,
+  "fields": {
+    "generation_run": 9,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 3,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:01.469Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 67,
+  "fields": {
+    "generation_run": 9,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 4,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:04.950Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 68,
+  "fields": {
+    "generation_run": 9,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 5,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:09.148Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 69,
+  "fields": {
+    "generation_run": 9,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 6,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:12.737Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 70,
+  "fields": {
+    "generation_run": 9,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 7,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:16.828Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 71,
+  "fields": {
+    "generation_run": 9,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 8,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:20.514Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 72,
+  "fields": {
+    "generation_run": 9,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 9,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:24.200Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 73,
+  "fields": {
+    "generation_run": 9,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 10,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:27.608Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 74,
+  "fields": {
+    "generation_run": 9,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 11,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:32.803Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 75,
+  "fields": {
+    "generation_run": 9,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 12,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:36.797Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 76,
+  "fields": {
+    "generation_run": 10,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 1,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:43.247Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 77,
+  "fields": {
+    "generation_run": 10,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 2,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:46.764Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 78,
+  "fields": {
+    "generation_run": 10,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 3,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:51.644Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 79,
+  "fields": {
+    "generation_run": 10,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 4,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:55.524Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 80,
+  "fields": {
+    "generation_run": 10,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 5,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:15:59.021Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 81,
+  "fields": {
+    "generation_run": 10,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 6,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:02.703Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 82,
+  "fields": {
+    "generation_run": 10,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 7,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:07.008Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 83,
+  "fields": {
+    "generation_run": 10,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 8,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:10.485Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 84,
+  "fields": {
+    "generation_run": 10,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 9,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:14.176Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 85,
+  "fields": {
+    "generation_run": 10,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 10,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:17.653Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 86,
+  "fields": {
+    "generation_run": 10,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 11,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:24.207Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 87,
+  "fields": {
+    "generation_run": 10,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 12,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:27.896Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 88,
+  "fields": {
+    "generation_run": 11,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 1,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:32.019Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 89,
+  "fields": {
+    "generation_run": 11,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 2,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:35.677Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 90,
+  "fields": {
+    "generation_run": 11,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 3,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:39.362Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 91,
+  "fields": {
+    "generation_run": 11,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 4,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:43.062Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 92,
+  "fields": {
+    "generation_run": 11,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 5,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:46.633Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 93,
+  "fields": {
+    "generation_run": 11,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 6,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:50.422Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 94,
+  "fields": {
+    "generation_run": 11,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 7,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:54.108Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 95,
+  "fields": {
+    "generation_run": 11,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 8,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:16:57.592Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 96,
+  "fields": {
+    "generation_run": 11,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 9,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:17:00.846Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 97,
+  "fields": {
+    "generation_run": 11,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 10,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:17:04.758Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 98,
+  "fields": {
+    "generation_run": 11,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 11,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:17:08.457Z"
+  }
+},
+{
+  "model": "exercises.candidate",
+  "pk": 99,
+  "fields": {
+    "generation_run": 11,
+    "problem_statement": "",
+    "reference_solution": "",
+    "test_source": "",
+    "attempt_number": 12,
+    "verdict": "error",
+    "failure_reason": "Generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "created_at": "2026-07-16T08:17:12.022Z"
+  }
+}
+]

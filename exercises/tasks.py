@@ -44,15 +44,20 @@ def _generate_candidate(client, run, attempt_number):
 
 @shared_task(bind=True)
 def generate_run(self, run_id: int):
-    """Generate every candidate for one persisted run, then judge and publish it."""
+    """Generate candidates until the run publishes its requested count."""
     run = GenerationRun.objects.get(pk=run_id)
     run.status = GenerationRun.Status.RUNNING
     run.save(update_fields=["status"])
     passed = 0
+    attempt = 0
+    ceiling = run.requested_count * 4
     try:
         client = OpenAI()
-        for number in range(1, run.requested_count + 1):
-            candidate = _generate_candidate(client, run, number)
+        while passed < run.requested_count and attempt < ceiling:
+            attempt += 1
+            candidate = _generate_candidate(client, run, attempt)
+            if candidate.verdict == Candidate.Verdict.ERROR:
+                continue
             verdict, reason = judge(candidate)
             candidate.verdict = verdict
             candidate.failure_reason = reason
@@ -66,4 +71,4 @@ def generate_run(self, run_id: int):
         run.status = GenerationRun.Status.FAILED
         run.save(update_fields=["status"])
         raise
-    return {"run_id": run.pk, "published": passed}
+    return {"run_id": run.pk, "generated": attempt, "published": passed}
