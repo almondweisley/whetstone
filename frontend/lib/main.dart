@@ -119,6 +119,7 @@ class _GeneratorScreenState extends State<GeneratorScreen> {
                     onSubmitted: (_) => _submit()),
                 const SizedBox(height: 12),
                 DropdownButtonFormField<String>(
+                  key: ValueKey(_difficulty),
                   initialValue: _difficulty,
                   decoration: const InputDecoration(
                       labelText: 'Difficulty', border: OutlineInputBorder()),
