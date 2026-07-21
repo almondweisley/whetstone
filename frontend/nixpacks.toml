@@ -1,14 +1,8 @@
-[
-    phases.setup
-]
-nixPkgs = ["nodejs"]
+[phases.setup]
+nixPkgs = ["nodejs_20"]
 
-[
-    phases.install
-]
+[phases.install]
 cmds = ["npm install -g serve"]
 
-[
-    start
-]
+[start]
 cmd = "serve -s build/web -l $PORT"
