@@ -2,7 +2,7 @@ Django>=5.2,<6.0
 gunicorn>=21.0
 psycopg[binary]>=3.2
 dj-database-url>=1.0
-whitenoise>=7.0
+whitenoise
 openai>=1.0
 pytest>=8.0
 celery[redis]>=5.4
