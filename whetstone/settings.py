@@ -1,12 +1,13 @@
 """Settings for the whetstone Django project."""
 import os
+import dj_database_url
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "unsafe-development-key-change-me")
 DEBUG = os.environ.get("DJANGO_DEBUG", "1") == "1"
-ALLOWED_HOSTS: list[str] = []
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "").split(",") if os.environ.get("DJANGO_ALLOWED_HOSTS") else []
 
 INSTALLED_APPS = [
     "corsheaders",
@@ -22,6 +23,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -45,15 +47,20 @@ WSGI_APPLICATION = "whetstone.wsgi.application"
 ASGI_APPLICATION = "whetstone.asgi.application"
 
 # These defaults match docker-compose.yml.  From another container, set
-# POSTGRES_HOST=db; from the host machine, leave it as localhost.
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ.get("POSTGRES_DB", "whetstone"),
-        "USER": os.environ.get("POSTGRES_USER", "whetstone"),
-        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "whetstone"),
-        "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
-        "PORT": os.environ.get("POSTGRES_PORT", "5433"),
+
+if os.environ.get("DATABASE_URL"):
+    DATABASES = {
+        "default": dj_database_url.config(conn_max_age=600)
+    }
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.environ.get("POSTGRES_DB", "whetstone"),
+            "USER": os.environ.get("POSTGRES_USER", "whetstone"),
+            "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "whetstone"),
+            "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
+            "PORT": os.environ.get("POSTGRES_PORT", "5433"),
     }
 }
 
@@ -63,6 +70,12 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 USE_TZ = True
 STATIC_URL = "static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Celery sends work to the Redis 7 service from docker-compose.yml.
