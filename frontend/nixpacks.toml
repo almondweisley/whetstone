@@ -1,0 +1,14 @@
+[
+    phases.setup
+]
+nixPkgs = ["nodejs"]
+
+[
+    phases.install
+]
+cmds = ["npm install -g serve"]
+
+[
+    start
+]
+cmd = "serve -s build/web -l $PORT"
