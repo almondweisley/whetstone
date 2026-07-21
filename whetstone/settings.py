@@ -74,3 +74,5 @@ CELERY_TASK_TRACK_STARTED = True
 # frontend. Leave it empty to deny cross-origin browser calls.
 _cors_origin = os.environ.get("CORS_ALLOWED_ORIGIN", "")
 CORS_ALLOWED_ORIGINS = [_cors_origin] if _cors_origin else []
+
+CORS_ALLOW_ALL_ORIGINS = True

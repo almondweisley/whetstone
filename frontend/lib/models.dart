@@ -60,3 +60,40 @@ class Exercise {
       publishedAt: json['published_at'] as String,
       winningCandidateId: json['winning_candidate_id'] as int);
 }
+class Discard {
+  const Discard({
+    required this.id,
+    required this.topic,
+    required this.problemStatement,
+    required this.failureReason,
+  });
+  final int id;
+  final String topic;
+  final String problemStatement;
+  final String failureReason;
+  factory Discard.fromJson(Map<String, dynamic> json) => Discard(
+      id: json['id'] as int,
+      topic: json['topic'] as String,
+      problemStatement: json['problem_statement'] as String,
+      failureReason: json['failure_reason'] as String);
+}
+
+class CorpusSummary {
+  const CorpusSummary({
+    required this.generated,
+    required this.kept,
+    required this.discarded,
+    required this.discards,
+  });
+  final int generated;
+  final int kept;
+  final int discarded;
+  final List<Discard> discards;
+  factory CorpusSummary.fromJson(Map<String, dynamic> json) => CorpusSummary(
+      generated: json['generated'] as int,
+      kept: json['kept'] as int,
+      discarded: json['discarded'] as int,
+      discards: (json['discards'] as List<dynamic>)
+          .map((item) => Discard.fromJson(item as Map<String, dynamic>))
+          .toList());
+}

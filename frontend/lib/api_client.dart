@@ -15,27 +15,6 @@ class ApiClient {
   Uri _uri(String path) =>
       Uri.parse('${apiBaseUrl.replaceFirst(RegExp(r'/+$'), '')}$path');
 
-  Future<int> startRun(
-      {required String topic, required String difficulty}) async {
-    final response = await _client.post(_uri('/api/runs'),
-        headers: {'Content-Type': 'application/json'},
-        body: jsonEncode({'topic': topic, 'difficulty': difficulty}));
-    final body = _object(response);
-    if (response.statusCode != 201){
-      throw ApiException(body['error'] as String? ?? 'Could not start a run.');
-    }
-    return body['id'] as int;
-  }
-
-  Future<GenerationRun> getRun(int id) async {
-    final response = await _client.get(_uri('/api/runs/$id'));
-    final body = _object(response);
-    if (response.statusCode != 200) {
-      throw ApiException(body['error'] as String? ?? 'Could not load the run.');
-    }
-    return GenerationRun.fromJson(body);
-  }
-
   Future<List<Exercise>> getExercises() async {
     final response = await _client.get(_uri('/api/exercises'));
     final body = _object(response);
@@ -46,6 +25,15 @@ class ApiClient {
     return (body['exercises'] as List<dynamic>)
         .map((item) => Exercise.fromJson(item as Map<String, dynamic>))
         .toList();
+  }
+
+  Future<CorpusSummary> getDiscards() async {
+    final response = await _client.get(_uri('/api/discards'));
+    final body = _object(response);
+    if (response.statusCode != 200) {
+      throw ApiException(body['error'] as String? ?? 'Could not load discards.');
+    }
+    return CorpusSummary.fromJson(body);
   }
 
   Map<String, dynamic> _object(http.Response response) {

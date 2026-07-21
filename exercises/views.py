@@ -4,7 +4,7 @@ import json
 from django.http import HttpRequest, JsonResponse
 from django.views.decorators.http import require_GET, require_http_methods
 
-from .models import Exercise, GenerationRun
+from .models import Candidate, Exercise, GenerationRun
 from .services import start_generation
 
 
@@ -60,3 +60,26 @@ def exercises(request: HttpRequest):
         }
         for exercise in published
     ]})
+
+
+@require_GET
+def discards(request: HttpRequest):
+    failed = Candidate.objects.filter(
+        verdict__in=[Candidate.Verdict.FAIL, Candidate.Verdict.ERROR]
+    ).order_by("created_at")
+    total = Candidate.objects.count()
+    kept = Exercise.objects.count()
+    return JsonResponse({
+        "generated" : total,
+        "kept" : kept,
+        "discarded": total - kept,
+        "discards": [
+            {
+                "id": c.pk,
+                "topic": c.generation_run.topic,
+                "problem_statement": c.problem_statement,
+                "failure_reason": c.failure_reason,
+            }
+            for c in failed.select_related("generation_run")
+        ],
+    })   
