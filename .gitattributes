@@ -1,0 +1,3 @@
+# Compiled Flutter web output, not hand-written code.
+# Keeps it out of GitHub's language stats.
+frontend/build/** linguist-generated=true
