@@ -2,7 +2,7 @@ name: Ping profile activity graph
 
 # After each push to the default branch, ask the profile repo
 # (almondweisley/almondweisley) to redraw the contribution graph right away.
-# Needs a repo secret PROFILE_DISPATCH_TOKEN: a fine-grained token with
+# Needs a repo secret PROFILE_DISPATCH_TOKEN (or GRAPH): a fine-grained token with
 # "Contents: Read and write" on almondweisley/almondweisley only.
 
 on:
@@ -16,10 +16,10 @@ jobs:
     steps:
       - name: Trigger profile graph update
         env:
-          TOKEN: ${{ secrets.PROFILE_DISPATCH_TOKEN }}
+          TOKEN: ${{ secrets.PROFILE_DISPATCH_TOKEN || secrets.GRAPH }}
         run: |
           if [ -z "$TOKEN" ]; then
-            echo "PROFILE_DISPATCH_TOKEN secret not set - skipping."
+            echo "No PROFILE_DISPATCH_TOKEN or GRAPH secret set - skipping."
             exit 0
           fi
           sleep 15  # give GitHub a moment to count the new contribution
